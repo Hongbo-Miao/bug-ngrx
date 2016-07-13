@@ -1,13 +1,8 @@
 import { Injectable } from '@angular/core';
-import { MeteorComponent } from 'angular2-meteor';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
-export class UserService extends MeteorComponent {
-
-  constructor() {
-    super();
-  }
+export class UserService  {
 
   load(): Observable<string> {
     return Observable.create(observer => {
