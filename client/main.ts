@@ -2,7 +2,7 @@ import { provideStore, combineReducers } from '@ngrx/store';
 import { compose } from '@ngrx/core/compose';
 import { runEffects } from '@ngrx/effects';
 import { storeLogger } from 'ngrx-store-logger';
-import { bootstrap } from 'angular2-meteor-auto-bootstrap';
+import { bootstrap } from '@angular/platform-browser-dynamic';
 
 import { APP_ROUTER_PROVIDERS } from './imports/routers/app.routes';
 import { UserService } from './imports/services/user.service';
