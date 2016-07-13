@@ -19,4 +19,4 @@ check
 force-ssl
 ddp-rate-limiter
 barbatus:angular2-runtime
-angular2-compilers@=0.5.7
+angular2-compilers

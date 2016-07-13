@@ -21,5 +21,5 @@ export class UserEffects {
     .whenAction('LOAD')
     .switchMap(() => this._userService.load())
     .filter(x => !!x)
-    .map(currentUser => ({ type: 'LOAD_SUCCESS', payload: currentUser }));
+    .map(x => ({ type: 'LOAD_SUCCESS', payload: x }));
 }
